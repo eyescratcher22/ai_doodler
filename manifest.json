@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Doodler Extension",
+  "version": "1.0",
+  "description": "Draw and doodle on any webpage",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Toggle Doodle Mode",
+    "default_popup": "popup.html",
+    "default_icons": {
+      "16": "icons/pen.png",
+      "48": "icons/pen.png",
+      "128": "icons/pen.png"
+    }
+  },
+  "icons": {
+    "16": "icons/pen.png",
+    "48": "icons/pen.png",
+    "128": "icons/pen.png"
+  }
+}
