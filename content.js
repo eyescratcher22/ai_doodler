@@ -729,7 +729,7 @@ function createDoodleUI() {
   ui.innerHTML = `
     <div style="display: flex; flex-direction: column; gap: 12px;">
       <div style="text-align: center; font-weight: 700; color: #667eea; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">
-        🎨 Doodle Studio
+         Doodle Studio
       </div>
 
       <div style="height: 1px; background: linear-gradient(to right, transparent, #667eea, transparent);"></div>
@@ -808,7 +808,7 @@ function createDoodleUI() {
           font-size: 13px;
           transition: all 0.3s ease;
         ">
-          🖼️ Add Image
+           Add Image
         </button>
 
         <div style="display: flex; gap: 8px;">
@@ -840,7 +840,7 @@ function createDoodleUI() {
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
           ">
-            🗑️ Clear
+             Clear
           </button>
         </div>
 
@@ -856,7 +856,7 @@ function createDoodleUI() {
           transition: all 0.3s ease;
           box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
         ">
-          ⬇️ Download Doodles
+            Download Doodles
         </button>
 
         <button id="doodle-download-website" style="
@@ -871,7 +871,7 @@ function createDoodleUI() {
           transition: all 0.3s ease;
           box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
         ">
-          📸 Screenshot
+           Screenshot
         </button>
 
         <button id="doodle-close" style="
