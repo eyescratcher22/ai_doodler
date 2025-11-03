@@ -728,49 +728,49 @@ function createDoodleUI() {
 
   ui.innerHTML = `
     <div style="display: flex; flex-direction: column; gap: 12px;">
-      <div style="text-align: center; font-weight: 700; color: #667eea; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">
+      <div style="text-align: center; font-weight: 500; color: #5f6368; font-size: 14px; letter-spacing: 0.25px;">
          Doodle Studio
       </div>
 
-      <div style="height: 1px; background: linear-gradient(to right, transparent, #667eea, transparent);"></div>
+      <div style="height: 1px; background: #dadce0;"></div>
 
       <!-- Drawing Tools -->
-      <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
-        <div style="font-size: 11px; font-weight: 700; color: #667eea; text-transform: uppercase; margin-bottom: 8px;">Drawing Tools</div>
+      <div style="background: #ffffff; padding: 10px; border-radius: 8px; border: 1px solid #dadce0;">
+        <div style="font-size: 11px; font-weight: 500; color: #5f6368; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.8px;">Drawing Tools</div>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-          <button class="tool-btn" data-tool="pen" title="Draw freehand" style="padding: 8px; background: white; border: 2px solid #667eea; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #667eea; transition: all 0.2s;">✏️ Pen</button>
-          <button class="tool-btn" data-tool="highlighter" title="Highlight text" style="padding: 8px; background: white; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #333; transition: all 0.2s;">🖍️ Highlight</button>
-          <button class="tool-btn" data-tool="line" title="Draw straight line" style="padding: 8px; background: white; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #333; transition: all 0.2s;">📏 Line</button>
-          <button class="tool-btn" data-tool="arrow" title="Draw arrow" style="padding: 8px; background: white; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #333; transition: all 0.2s;">➜ Arrow</button>
-          <button class="tool-btn" data-tool="rectangle" title="Draw rectangle" style="padding: 8px; background: white; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #333; transition: all 0.2s;">▭ Box</button>
-          <button class="tool-btn" data-tool="circle" title="Draw circle" style="padding: 8px; background: white; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #333; transition: all 0.2s;">● Circle</button>
-          <button class="tool-btn" data-tool="text" title="Add text" style="padding: 8px; background: white; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #333; transition: all 0.2s;">📝 Text</button>
-          <button class="tool-btn" data-tool="eraser" title="Erase" style="padding: 8px; background: white; border: 2px solid #ddd; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; color: #333; transition: all 0.2s;">🧹 Eraser</button>
+          <button class="tool-btn" data-tool="pen" title="Draw freehand" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">✏️ Pen</button>
+          <button class="tool-btn" data-tool="highlighter" title="Highlight text" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">🖍️ Highlight</button>
+          <button class="tool-btn" data-tool="line" title="Draw straight line" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">📏 Line</button>
+          <button class="tool-btn" data-tool="arrow" title="Draw arrow" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">➜ Arrow</button>
+          <button class="tool-btn" data-tool="rectangle" title="Draw rectangle" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">▭ Box</button>
+          <button class="tool-btn" data-tool="circle" title="Draw circle" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">● Circle</button>
+          <button class="tool-btn" data-tool="text" title="Add text" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">📝 Text</button>
+          <button class="tool-btn" data-tool="eraser" title="Erase" style="padding: 8px; background: white; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 500; color: #5f6368; transition: all 0.2s;">🧹 Eraser</button>
         </div>
       </div>
 
       <!-- Colors & Style -->
-      <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
-        <div style="font-size: 11px; font-weight: 700; color: #667eea; text-transform: uppercase; margin-bottom: 8px;">Colors & Style</div>
+      <div style="background: #ffffff; padding: 10px; border-radius: 8px; border: 1px solid #dadce0;">
+        <div style="font-size: 11px; font-weight: 500; color: #5f6368; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.8px;">Colors & Style</div>
         
         <div style="display: flex; gap: 8px; margin-bottom: 8px;">
           <div style="flex: 1;">
-            <label style="font-size: 10px; font-weight: 600; color: #666; display: block; margin-bottom: 4px;">Stroke</label>
-            <input type="color" id="doodle-color" value="#667eea" style="width: 100%; height: 36px; border: none; border-radius: 6px; cursor: pointer;">
+            <label style="font-size: 10px; font-weight: 500; color: #5f6368; display: block; margin-bottom: 4px;">Stroke</label>
+            <input type="color" id="doodle-color" value="#4285F4" style="width: 100%; height: 36px; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer;">
           </div>
           <div style="flex: 1;">
-            <label style="font-size: 10px; font-weight: 600; color: #666; display: block; margin-bottom: 4px;">Fill</label>
-            <input type="color" id="doodle-fill" value="#667eea" style="width: 100%; height: 36px; border: none; border-radius: 6px; cursor: pointer;">
+            <label style="font-size: 10px; font-weight: 500; color: #5f6368; display: block; margin-bottom: 4px;">Fill</label>
+            <input type="color" id="doodle-fill" value="#4285F4" style="width: 100%; height: 36px; border: 1px solid #dadce0; border-radius: 4px; cursor: pointer;">
           </div>
         </div>
 
-        <label style="font-size: 10px; color: #666; display: flex; align-items: center; gap: 6px; cursor: pointer;">
+        <label style="font-size: 10px; color: #5f6368; display: flex; align-items: center; gap: 6px; cursor: pointer;">
           <input type="checkbox" id="doodle-fill-toggle"> Use fill
         </label>
 
         <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px;">
-          <label style="font-size: 10px; font-weight: 600; color: #666;">Style:</label>
-          <select id="doodle-brush-style" style="padding: 6px; border: 2px solid #ddd; border-radius: 6px; background: white; color: #333; cursor: pointer; font-size: 12px;">
+          <label style="font-size: 10px; font-weight: 500; color: #5f6368;">Style:</label>
+          <select id="doodle-brush-style" style="padding: 6px; border: 1px solid #dadce0; border-radius: 4px; background: white; color: #5f6368; cursor: pointer; font-size: 12px;">
             <option value="solid">━ Solid</option>
             <option value="dotted">⠿ Dotted</option>
             <option value="dashed">╌ Dashed</option>
@@ -779,34 +779,35 @@ function createDoodleUI() {
       </div>
 
       <!-- Size Controls -->
-      <div style="background: #f8f9fa; padding: 10px; border-radius: 8px;">
-        <div style="font-size: 11px; font-weight: 700; color: #667eea; text-transform: uppercase; margin-bottom: 8px;">Size & Opacity</div>
+      <div style="background: #ffffff; padding: 10px; border-radius: 8px; border: 1px solid #dadce0;">
+        <div style="font-size: 11px; font-weight: 500; color: #5f6368; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.8px;">Size & Opacity</div>
         
         <div style="margin-bottom: 8px;">
-          <label style="font-size: 10px; font-weight: 600; color: #666; display: block; margin-bottom: 4px;">Brush Size: <span id="doodle-size-value">3</span>px</label>
-          <input type="range" id="doodle-size" min="1" max="50" value="3" style="width: 100%; height: 6px; border-radius: 3px; background: linear-gradient(to right, #667eea, #764ba2); outline: none; -webkit-appearance: none; appearance: none; cursor: pointer;">
+          <label style="font-size: 10px; font-weight: 500; color: #5f6368; display: block; margin-bottom: 4px;">Brush Size: <span id="doodle-size-value">3</span>px</label>
+          <input type="range" id="doodle-size" min="1" max="50" value="3" style="width: 100%; height: 6px; border-radius: 3px; background: #dadce0; outline: none; -webkit-appearance: none; appearance: none; cursor: pointer;">
         </div>
 
         <div>
-          <label style="font-size: 10px; font-weight: 600; color: #666; display: block; margin-bottom: 4px;">Highlight Opacity: <span id="doodle-opacity-value">30</span>%</label>
-          <input type="range" id="doodle-opacity" min="10" max="100" value="30" step="10" style="width: 100%; height: 6px; border-radius: 3px; background: linear-gradient(to right, #f093fb, #f5576c); outline: none; -webkit-appearance: none; appearance: none; cursor: pointer;">
+          <label style="font-size: 10px; font-weight: 500; color: #5f6368; display: block; margin-bottom: 4px;">Highlight Opacity: <span id="doodle-opacity-value">30</span>%</label>
+          <input type="range" id="doodle-opacity" min="10" max="100" value="30" step="10" style="width: 100%; height: 6px; border-radius: 3px; background: #dadce0; outline: none; -webkit-appearance: none; appearance: none; cursor: pointer;">
         </div>
       </div>
 
-      <div style="height: 1px; background: linear-gradient(to right, transparent, #667eea, transparent); margin: 8px 0;"></div>
+      <div style="height: 1px; background: #dadce0; margin: 8px 0;"></div>
 
       <!-- Action Buttons -->
       <div style="display: flex; flex-direction: column; gap: 8px;">
         <button id="doodle-add-image" style="
           padding: 10px;
           background: white;
-          color: #667eea;
-          border: 2px solid #667eea;
-          border-radius: 8px;
-          font-weight: 600;
+          color: #5f6368;
+          border: 1px solid #dadce0;
+          border-radius: 4px;
+          font-weight: 500;
           cursor: pointer;
           font-size: 13px;
-          transition: all 0.3s ease;
+          transition: all 0.2s ease;
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
         ">
            Add Image
         </button>
@@ -816,13 +817,14 @@ function createDoodleUI() {
             flex: 1;
             padding: 10px;
             background: white;
-            color: #667eea;
-            border: 2px solid #667eea;
-            border-radius: 8px;
-            font-weight: 600;
+            color: #5f6368;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-weight: 500;
             cursor: pointer;
             font-size: 12px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
           ">
             ↶ Undo
           </button>
@@ -830,15 +832,15 @@ function createDoodleUI() {
           <button id="doodle-clear" style="
             flex: 1;
             padding: 10px;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: #EA4335;
             color: white;
             border: none;
-            border-radius: 8px;
-            font-weight: 600;
+            border-radius: 4px;
+            font-weight: 500;
             cursor: pointer;
             font-size: 12px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px 0 rgba(234, 67, 53, 0.3), 0 1px 3px 1px rgba(234, 67, 53, 0.15);
           ">
              Clear
           </button>
@@ -846,30 +848,30 @@ function createDoodleUI() {
 
         <button id="doodle-download" style="
           padding: 10px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: #4285F4;
           color: white;
           border: none;
-          border-radius: 8px;
-          font-weight: 600;
+          border-radius: 4px;
+          font-weight: 500;
           cursor: pointer;
           font-size: 13px;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+          transition: all 0.2s ease;
+          box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244, 0.15);
         ">
             Download Doodles
         </button>
 
         <button id="doodle-download-website" style="
           padding: 10px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: #4285F4;
           color: white;
           border: none;
-          border-radius: 8px;
-          font-weight: 600;
+          border-radius: 4px;
+          font-weight: 500;
           cursor: pointer;
           font-size: 13px;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+          transition: all 0.2s ease;
+          box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244, 0.15);
         ">
            Screenshot
         </button>
@@ -877,21 +879,21 @@ function createDoodleUI() {
         <button id="doodle-close" style="
           padding: 10px;
           background: white;
-          color: #667eea;
-          border: 2px solid #667eea;
-          border-radius: 8px;
-          font-weight: 600;
+          color: #5f6368;
+          border: 1px solid #dadce0;
+          border-radius: 4px;
+          font-weight: 500;
           cursor: pointer;
           font-size: 13px;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: all 0.3s ease;
+          letter-spacing: 0.25px;
+          transition: all 0.2s ease;
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
         ">
           Close (ESC)
         </button>
       </div>
 
-      <div style="font-size: 10px; color: #999; margin-top: 8px; text-align: center; line-height: 1.4;">
+      <div style="font-size: 10px; color: #80868b; margin-top: 8px; text-align: center; line-height: 1.4;">
         💡 Tip: Ctrl+Z to undo, ESC to close
       </div>
     </div>
